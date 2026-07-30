@@ -1,74 +1,94 @@
 # MCSync — Guia rápido de uso
 
-## 1. Conecte o Google Drive
+## 1. Instale o aplicativo
 
-Se a transferência utilizar o Drive:
+1. Abra o arquivo DMG.
+2. Arraste o MCSyncDrive para **Applications**.
+3. Tente abrir o aplicativo.
+4. Se o macOS bloquear, abra **System Settings > Privacy & Security** e use
+   **Open Anyway**.
+
+O MCSyncDrive já inclui o rclone. Não é necessário instalar Homebrew.
+
+## 2. Conecte o Google Drive
+
+Esta etapa só é necessária quando a origem ou o destino estiver no Drive:
 
 1. Clique no cabeçalho **Google Drive**.
 2. Escolha **Read-only** para baixar ou **Read & write** para baixar e enviar.
 3. Clique em **Connect** e autorize a conta no navegador.
 
-Quando não houver Google Drive na operação, esta etapa não é necessária.
+Enquanto o OAuth estiver em modo Testing, a conta precisa estar cadastrada
+como testadora e o Google poderá solicitar uma nova conexão depois de sete
+dias.
 
-## 2. Escolha origem e destino
+## 3. Escolha origem e destino
 
-Em **Source**, escolha a pasta que será copiada.
-
-Em **Destination**, escolha a pasta que receberá os arquivos.
+Em **Source**, escolha a pasta que será copiada. Em **Destination**, escolha a
+pasta que receberá os arquivos.
 
 - **Local:** SSD ou pasta disponível no Mac.
 - **Remote:** Google Drive.
-- **Choose Folder…:** abre o seletor de pastas.
-
-No seletor do Drive, use **Select** para escolher uma pasta sem entrar nela ou
-**Select Current Folder** para escolher a pasta aberta.
-
-## 3. Escolha a estrutura das pastas
-
 - **Include subfolders:** inclui as subpastas da origem.
+- **Content:** filtra todos os arquivos, fotos, fotos e vídeos ou mídias com
+  sidecars.
+
+No seletor do Drive, use **Select** para escolher uma pasta sem entrar nela,
+**Select Current Folder** para escolher a pasta aberta ou **New Folder** para
+criar uma pasta no destino.
+
+## 4. Defina a organização do destino
+
+Escolha uma opção de **Destination structure**:
+
+- **Keep source subfolders:** mantém as pastas abaixo da origem.
 - **Create source folder:** cria no destino uma pasta com o nome da origem.
-- **Preserve source path:** recria o caminho completo da origem no destino.
+- **Preserve full source path:** recria o caminho completo da origem.
+- **Flatten into destination (Keep both):** coloca os arquivos diretamente no
+  destino e adiciona numeração quando houver nomes iguais.
 
-Para o uso mais simples, mantenha **Include subfolders** e
-**Create source folder** marcados.
+Ative **Dated folder** para criar antes da estrutura uma pasta com a data atual
+no formato `yyyyMMdd`.
 
-## 4. Analise a transferência
+Confira **Final destination** antes de continuar. Em destinos locais, o
+prefixo `/Volumes/` é omitido apenas na tela para facilitar a leitura.
 
-Clique em **Analyze Transfer**.
+## 5. Analise a transferência
 
-O app mostrará:
+Clique em **Analyze Transfer** para conferir:
 
-- total da pasta de origem;
-- quantidade que precisa ser transferida;
+- total e quantidade de arquivos da origem;
+- dados que realmente precisam ser transferidos;
 - espaço livre no destino;
 - possíveis avisos.
 
-Se o destino não tiver espaço suficiente, a informação aparecerá em vermelho.
+Use **Stop Analysis** para interromper a análise. Se faltar espaço, o app
+mostrará o aviso em vermelho antes de adicionar a operação.
 
-## 5. Use as configurações recomendadas
+## 6. Confira as configurações
 
 Para os primeiros testes, mantenha:
 
 | Controle | Recomendado |
 |---|---|
+| **Performance** | Balanced |
 | **Mode** | Copy / Update |
 | **Verification** | MD5 |
-| **Performance** | Balanced |
+
+**Mode** e **Verification** ficam dentro de **Advanced settings**. O cabeçalho
+recolhido mostra as escolhas atuais.
 
 **Copy / Update** copia arquivos novos ou alterados e não apaga arquivos
 extras do destino.
 
-## 6. Adicione à fila
+## 7. Adicione à fila
 
-Clique em **Add to Queue**.
+Clique em **Add to Queue**. A operação começa quando houver uma posição livre.
 
-A primeira operação começa automaticamente. As próximas aguardam em
-**Waiting**, seguindo a ordem em que foram adicionadas.
+As próximas operações ficam em **Waiting**, seguindo a ordem da fila.
+**Start in Parallel** permite executar uma segunda operação ao mesmo tempo.
 
-É possível usar **Start in Parallel** para executar uma segunda operação ao
-mesmo tempo.
-
-## 7. Acompanhe a operação
+## 8. Acompanhe a operação
 
 | Controle | Ação |
 |---|---|
@@ -80,17 +100,18 @@ mesmo tempo.
 Durante a cópia, o item mostra progresso, velocidade, tempo estimado e os
 arquivos atuais.
 
-## 8. Confira o resultado
+## 9. Confira o resultado
 
-- **Succeeded:** operação concluída corretamente.
-- **Succeeded with warnings:** concluída, mas existem avisos para conferir.
-- **Failed:** a operação não foi concluída.
-- **Cancelled:** a operação foi cancelada.
+Quando a operação terminar com **Succeeded**, o resumo mostrará em uma linha:
 
-Quando o resultado for **Succeeded**, confira as estatísticas de arquivos,
-dados transferidos e verificação.
+- **Processing time**;
+- **Data transferred**;
+- **Files transferred**;
+- **Integrity check**.
 
-Mantenha a pasta de origem quando houver avisos ou falhas.
+**Succeeded with warnings** indica que existem avisos para conferir.
+Em **Failed** ou **Cancelled**, mantenha a origem e revise a operação antes de
+tentar novamente.
 
 ## Controles rápidos
 
@@ -99,6 +120,5 @@ Mantenha a pasta de origem quando houver avisos ou falhas.
 | **Analyze Transfer** | Analisa sem copiar arquivos. |
 | **Swap** | Inverte Source e Destination. |
 | **Clear Folders** | Limpa as duas pastas selecionadas. |
-| **Add to Queue** | Adiciona e inicia a operação quando a fila está livre. |
-| **Clear History** | Limpa o histórico, sem apagar arquivos transferidos. |
-
+| **Add to Queue** | Adiciona a operação à fila. |
+| **Clear History** | Limpa histórico, estatísticas e artefatos da operação. |
