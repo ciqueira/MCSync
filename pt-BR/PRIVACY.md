@@ -1,4 +1,4 @@
-# Política de Privacidade — MCSyncDrive
+# MCSyncDrive - Política de Privacidade
 
 [English](../PRIVACY.md) · [Português](PRIVACY.md)
 
