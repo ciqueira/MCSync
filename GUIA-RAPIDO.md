@@ -18,9 +18,10 @@ Esta etapa só é necessária quando a origem ou o destino estiver no Drive:
 2. Escolha **Read-only** para baixar ou **Read & write** para baixar e enviar.
 3. Clique em **Connect** e autorize a conta no navegador.
 
-Enquanto o OAuth estiver em modo Testing, a conta precisa estar cadastrada
-como testadora e o Google poderá solicitar uma nova conexão depois de sete
-dias.
+Enquanto a verificação pública do OAuth não estiver concluída, o Google poderá
+exibir um aviso de aplicativo não verificado. Se o projeto estiver em modo
+Testing, a conta também precisará estar cadastrada como testadora e poderá
+exigir nova conexão depois de sete dias.
 
 ## 3. Escolha origem e destino
 

@@ -10,25 +10,27 @@ O MCSync foi criado para tornar cópias grandes mais simples de acompanhar e
 mais fáceis de conferir ao final. Este repositório reúne os instaladores e a
 documentação pública da versão beta.
 
-## Beta 2
+## Beta 3
 
-A Beta 2 melhora a preparação e a conferência das operações:
+A Beta 3 consolida o nome público MCSync e torna a conexão com o Google Drive
+mais clara:
 
-- filtros para copiar todos os arquivos, fotos, vídeos ou mídias com sidecars;
-- novas opções de estrutura e organização do destino;
-- pasta opcional com data no formato `yyyyMMdd`;
-- caminho final do destino visível antes de adicionar à fila;
-- configurações avançadas recolhidas em uma seção própria;
-- resumo de conclusão mais claro, com quatro estatísticas;
-- criação e seleção de pastas diretamente no seletor do Google Drive.
+- aplicativo, menus, DMG e documentação identificados como **MCSync**;
+- **Read-only** definido como acesso inicial padrão ao Google Drive;
+- acesso **Read & write** disponível somente quando selecionado pelo usuário;
+- ação **Connect Google Drive** com identificação mais direta;
+- aviso de processamento local e link para a política de privacidade dentro da
+  caixa de conexão;
+- site, política e identidade visual alinhados ao aplicativo.
 
-Consulte as [novidades da Beta 2](NOVIDADES-BETA-2.md) para conhecer os
+As funções de transferência introduzidas na Beta 2 permanecem disponíveis.
+Consulte as [novidades da Beta 3](NOVIDADES-BETA-3.md) para conhecer os
 detalhes e as limitações desta avaliação.
 
 ## Download
 
-Baixe o DMG mais recente na página de
-[Releases](https://github.com/ciqueira/MCSync/releases).
+Baixe o [MCSync v0.1.0 Beta 3](https://github.com/ciqueira/MCSync/releases/tag/v0.1.0-beta.3)
+ou consulte a página de [Releases](https://github.com/ciqueira/MCSync/releases).
 
 Esta beta é compatível com Macs Apple Silicon e macOS 14.6 ou mais recente.
 O aplicativo inclui o rclone e não requer Homebrew.
@@ -42,15 +44,13 @@ Esta beta ainda não é notarizada pela Apple.
 3. Se o macOS bloquear o aplicativo, abra **System Settings > Privacy &
    Security** e clique em **Open Anyway**.
 
-Se o aplicativo continuar bloqueado e tiver sido baixado da página oficial de
-Releases do MCSync, execute:
+Se o aplicativo continuar bloqueado, abra o Terminal e execute:
 
 ```bash
-xattr -dr com.apple.quarantine /Applications/MCSync.app
+xattr -cr /Applications/MCSync.app
 ```
 
-Inicie o MCSync novamente. Esse comando remove somente o atributo de quarentena
-do pacote do MCSync; ele não desativa o Gatekeeper globalmente.
+Inicie o MCSync novamente.
 
 ## Guia rápido
 
