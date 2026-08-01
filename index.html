@@ -1,0 +1,97 @@
+---
+layout: null
+title: MCSync
+permalink: /
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MCSync is a macOS application for reliable transfers between SSDs and Google Drive.">
+  <meta name="color-scheme" content="dark">
+  <title>MCSync · Reliable media transfers</title>
+  <link rel="canonical" href="https://sync.mcnexus.app/">
+  <link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="/" aria-label="MCSync home">MCSync</a>
+      <nav aria-label="Primary navigation">
+        <a href="#features">Features</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="https://github.com/ciqueira/MCSync/releases">Download</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero shell">
+      <p class="eyebrow">Native macOS application</p>
+      <h1>Reliable transfers between SSDs and Google Drive.</h1>
+      <p class="hero-copy">
+        MCSync helps media professionals prepare, transfer, resume, and verify
+        large projects without sending files or credentials through MC servers.
+      </p>
+      <div class="actions">
+        <a class="button primary" href="https://github.com/ciqueira/MCSync/releases">Download the latest beta</a>
+        <a class="button secondary" href="https://github.com/ciqueira/MCSync/blob/main/GUIA-RAPIDO.md">Quick guide</a>
+      </div>
+      <p class="availability">Apple Silicon · macOS 14.6 or later · rclone included</p>
+    </section>
+
+    <section id="features" class="section shell">
+      <p class="eyebrow">Built for real transfer work</p>
+      <h2>Prepare the destination, understand the transfer, verify the result.</h2>
+      <div class="feature-grid">
+        <article>
+          <h3>Transfer analysis</h3>
+          <p>Review eligible data and destination space before adding an operation to the queue.</p>
+        </article>
+        <article>
+          <h3>Copy and update</h3>
+          <p>Move projects between local SSDs and Google Drive while preserving the destination organization you choose.</p>
+        </article>
+        <article>
+          <h3>Integrity verification</h3>
+          <p>Confirm completed work with operation statistics and the verification method selected for the transfer.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section shell data-section">
+      <div>
+        <p class="eyebrow">Google Drive data</p>
+        <h2>Your files move directly between Google Drive and your Mac.</h2>
+      </div>
+      <div class="data-copy">
+        <p>
+          MCSync requests either read-only or read-and-write Google Drive access,
+          according to the option you select. OAuth tokens are stored locally in
+          an encrypted rclone configuration. MCSync does not upload files,
+          previews, metadata, or credentials to MC or Nexus servers.
+        </p>
+        <p><a class="text-link" href="/privacy/">Read the MCSync Privacy Policy →</a></p>
+      </div>
+    </section>
+
+    <section class="section shell final-section">
+      <p class="eyebrow">Public beta</p>
+      <h2>Test with non-critical copies and keep your source until the result is confirmed.</h2>
+      <div class="actions">
+        <a class="button primary" href="https://github.com/ciqueira/MCSync/releases">Open releases</a>
+        <a class="button secondary" href="https://github.com/ciqueira/MCSync/issues">Support</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <p>MCSync · A Nexus application by Magno Ciqueira</p>
+      <p><a href="mailto:sync@mcnexus.app">sync@mcnexus.app</a> · <a href="/privacy/">Privacy</a></p>
+    </div>
+  </footer>
+</body>
+</html>

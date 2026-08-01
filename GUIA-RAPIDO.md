@@ -3,12 +3,12 @@
 ## 1. Instale o aplicativo
 
 1. Abra o arquivo DMG.
-2. Arraste o MCSyncDrive para **Applications**.
+2. Arraste o MCSync para **Applications**.
 3. Tente abrir o aplicativo.
 4. Se o macOS bloquear, abra **System Settings > Privacy & Security** e use
    **Open Anyway**.
 
-O MCSyncDrive já inclui o rclone. Não é necessário instalar Homebrew.
+O MCSync já inclui o rclone. Não é necessário instalar Homebrew.
 
 ## 2. Conecte o Google Drive
 

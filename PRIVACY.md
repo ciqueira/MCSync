@@ -1,30 +1,30 @@
-# MCSyncDrive - Privacy Policy
+# MCSync - Privacy Policy
 
-[English](PRIVACY.md) · [Português](pt-BR/PRIVACY.md)
+[English](https://sync.mcnexus.app/privacy/) · [Português](https://sync.mcnexus.app/pt-BR/privacy/)
 
-Last updated: July 30, 2026
+Last updated: August 1, 2026
 
-Document version: `mcsyncdrive-privacy-2026-07-30`
+Document version: `mcsync-privacy-2026-08-01`
 
-This Privacy Policy explains how MCSyncDrive ("MCSyncDrive", "the application",
+This Privacy Policy explains how MCSync ("MCSync", "the application",
 "we", "us") handles information when you use the application on your Mac. The
 application is developed and maintained by Magno Ciqueira under the Nexus
 platform and processed under the Brazilian General Data Protection Law
 (LGPD — Law No. 13,709/2018) and, where applicable, other data protection laws.
 
-By installing or using MCSyncDrive, you acknowledge having access to this
+By installing or using MCSync, you acknowledge having access to this
 policy.
 
 ## 1. Controller Identification
 
-MCSyncDrive is developed and maintained by Magno Ciqueira, who is responsible
+MCSync is developed and maintained by Magno Ciqueira, who is responsible
 for the personal data processing described in this policy.
 
 Privacy contact: [sync@mcnexus.app](mailto:sync@mcnexus.app)
 
-## 2. What MCSyncDrive Does
+## 2. What MCSync Does
 
-MCSyncDrive is a native macOS application that connects to your Google Drive
+MCSync is a native macOS application that connects to your Google Drive
 account and transfers files between Google Drive and local storage devices (SSDs
 or other volumes). All transfer operations are performed locally on your Mac
 using rclone, a command-line tool bundled inside the application. No files,
@@ -35,7 +35,7 @@ the Nexus platform.
 
 ### 3.1 Google Account and Drive Access
 
-MCSyncDrive connects to your Google account using OAuth 2.0. Depending on the
+MCSync connects to your Google account using OAuth 2.0. Depending on the
 access scope you choose, the application may request:
 
 - **`drive`** — read and write access to files your account can access in
@@ -43,8 +43,8 @@ access scope you choose, the application may request:
 - **`drive.readonly`** — read and download access only, with no ability to
   upload or modify files.
 
-The application uses the scope you explicitly select. You can change the scope
-by reconnecting your account from within the application.
+The application uses the scope you explicitly select. To change the scope,
+disconnect the account and connect again after choosing another access level.
 
 Your name and email address may be displayed within the application to confirm
 which account is connected. This information is read from your Google profile
@@ -73,7 +73,7 @@ write only).
 
 ### 3.3 Local File Operations
 
-MCSyncDrive reads and writes files on the storage volumes and Google Drive
+MCSync reads and writes files on the storage volumes and Google Drive
 folders you select. The application:
 
 - accesses only the source and destination folders you explicitly choose for
@@ -86,7 +86,7 @@ folders you select. The application:
 
 ### 3.4 Operation History and Logs
 
-MCSyncDrive maintains a local operation history that records:
+MCSync maintains a local operation history that records:
 
 - project name and operation type;
 - transfer direction, source, and destination paths;
@@ -115,7 +115,7 @@ you clear the history from within the application or uninstall the application.
 
 ### 3.5 No Analytics or Telemetry
 
-MCSyncDrive does not include analytics libraries, crash reporters, telemetry
+MCSync does not include analytics libraries, crash reporters, telemetry
 agents, or advertising SDKs. No usage data is collected or transmitted
 automatically.
 
@@ -123,15 +123,19 @@ automatically.
 
 The application accesses Google Drive solely through the Google Drive API using
 your own Google account credentials. Only the data required to list, transfer,
-and verify the files you select is requested. MCSyncDrive does not read Gmail,
+and verify the files you select is requested. MCSync does not read Gmail,
 Google Calendar, Google Contacts, or any other Google service.
 
 The application does not share, sell, or use your Google Drive data for any
 purpose other than the file transfer operations you initiate.
 
+MCSync's use and transfer of information received from Google APIs adheres to
+the [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy),
+including the Limited Use requirements.
+
 ## 5. Use of rclone
 
-MCSyncDrive bundles rclone ([rclone.org](https://rclone.org)) to perform file
+MCSync bundles rclone ([rclone.org](https://rclone.org)) to perform file
 transfers and verifications. rclone communicates directly with Google Drive on
 your behalf using your OAuth token. The rclone process runs locally on your Mac
 and does not relay data through any intermediary server operated by Magno
@@ -148,7 +152,7 @@ application bundle in `ThirdPartyNotices.txt`.
 | Local folder access (Finder picker) | Read from or write to the local SSD volumes you select |
 | Network access | Connect to the Google Drive API on your behalf |
 
-MCSyncDrive does not request access to your contacts, microphone, camera,
+MCSync does not request access to your contacts, microphone, camera,
 location, or any other system resource not listed above.
 
 ## 7. Data Stored on Your Mac
@@ -166,7 +170,7 @@ You can delete them manually if you wish to remove all local data.
 
 ## 8. Data Sharing
 
-MCSyncDrive does not share your data with any third party, except:
+MCSync does not share your data with any third party, except:
 
 - **Google LLC:** your files and credentials are transmitted to Google Drive
   through the Google Drive API as part of the transfer operations you initiate.
@@ -175,11 +179,11 @@ MCSyncDrive does not share your data with any third party, except:
   [API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy)
   apply to data processed by Google.
 
-No other data is shared with any party. MCSyncDrive does not sell or rent data.
+No other data is shared with any party. MCSync does not sell or rent data.
 
 ## 9. Security
 
-MCSyncDrive applies the following measures to protect your data:
+MCSync applies the following measures to protect your data:
 
 - OAuth tokens stored in an rclone-encrypted configuration file with `0600`
   permissions;
@@ -190,7 +194,7 @@ MCSyncDrive applies the following measures to protect your data:
 
 ## 10. Children and Minors
 
-MCSyncDrive is a professional application intended for audiovisual
+MCSync is a professional application intended for audiovisual
 post-production workflows and is not directed to people under 18. We do not
 intentionally collect data from children or minors.
 
@@ -203,7 +207,7 @@ Subject to applicable law, you may request:
 - correction of inaccurate or outdated data;
 - deletion of data, subject to legal and operational requirements.
 
-Because MCSyncDrive stores all data locally on your Mac, you can inspect,
+Because MCSync stores all data locally on your Mac, you can inspect,
 export, or delete your data at any time by accessing the directories listed in
 Section 7. To exercise rights related to any data processed by Magno Ciqueira
 outside the application, contact:
@@ -212,7 +216,7 @@ outside the application, contact:
 
 ## 12. International Users and Transfers
 
-MCSyncDrive is operated from Brazil. We seek to comply with the data-protection
+MCSync is operated from Brazil. We seek to comply with the data-protection
 requirements applicable to each relationship, including, where relevant, the
 GDPR for residents of the European Economic Area and United Kingdom and privacy
 laws applicable to California residents.

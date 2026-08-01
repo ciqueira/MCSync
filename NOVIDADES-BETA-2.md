@@ -1,4 +1,4 @@
-# MCSyncDrive Beta 2
+# MCSync Beta 2
 
 A Beta 2 concentra as melhorias feitas durante os primeiros testes da
 interface e do fluxo de transferência.

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="{{ page.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta name="color-scheme" content="dark">
+  <title>{{ page.title }} · MCSync</title>
+  <link rel="canonical" href="{{ page.canonical | default: page.url | absolute_url }}">
+  <link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="/" aria-label="MCSync home">MCSync</a>
+      <nav aria-label="Primary navigation">
+        <a href="https://github.com/ciqueira/MCSync/releases">Download</a>
+        <a href="/privacy/">Privacy</a>
+      </nav>
+    </div>
+  </header>
+  <main id="content" class="shell document">
+    {{ content }}
+  </main>
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <p>MCSync · A Nexus application by Magno Ciqueira</p>
+      <p><a href="mailto:sync@mcnexus.app">sync@mcnexus.app</a></p>
+    </div>
+  </footer>
+</body>
+</html>

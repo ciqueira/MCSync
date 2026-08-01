@@ -1,0 +1,8 @@
+title: MCSync
+description: Reliable transfers between SSDs and Google Drive.
+url: https://sync.mcnexus.app
+encoding: utf-8
+markdown: kramdown
+exclude:
+  - .git
+  - .github
