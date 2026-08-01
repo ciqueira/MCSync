@@ -1,3 +1,12 @@
+---
+layout: default
+title: Política de Privacidade
+description: Como o MCSync acessa, utiliza, armazena e protege os dados do usuário Google.
+lang: pt-BR
+permalink: /pt-BR/privacy/
+canonical: https://sync.mcnexus.app/pt-BR/privacy/
+---
+
 # MCSync - Política de Privacidade
 
 [English](https://sync.mcnexus.app/privacy/) · [Português](https://sync.mcnexus.app/pt-BR/privacy/)
