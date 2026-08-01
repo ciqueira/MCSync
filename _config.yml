@@ -1,5 +1,5 @@
 title: MCSync
-description: Reliable transfers between SSDs and Google Drive.
+description: Controlled file transfers between local storage and Google Drive on macOS.
 url: https://sync.mcnexus.app
 encoding: utf-8
 markdown: kramdown

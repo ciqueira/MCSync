@@ -66,11 +66,18 @@ a { color: inherit; }
 .header-inner { min-height: 68px; }
 
 .brand {
-  font-size: 20px;
-  font-weight: 600;
-  letter-spacing: -0.03em;
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
 }
+
+.brand-logo {
+  display: block;
+  width: 120px;
+  height: auto;
+}
+
+.brand:hover { opacity: 0.82; }
 
 nav { display: flex; gap: 24px; }
 
@@ -271,6 +278,7 @@ h3 {
 
 @media (max-width: 760px) {
   .shell { width: min(calc(100% - 28px), var(--shell)); }
+  .brand-logo { width: 108px; }
   nav a:first-child { display: none; }
   nav { gap: 14px; }
   .hero { min-height: auto; padding-block: 100px 80px; }
