@@ -33,6 +33,25 @@ Baixe o DMG mais recente na página de
 Esta beta é compatível com Macs Apple Silicon e macOS 14.6 ou mais recente.
 O aplicativo inclui o rclone e não requer Homebrew.
 
+## Instalação no macOS
+
+Esta beta ainda não é notarizada pela Apple.
+
+1. Abra o arquivo `.dmg` e arraste `MCSync.app` para `/Applications`.
+2. Inicie o MCSync.
+3. Se o macOS bloquear o aplicativo, abra **System Settings > Privacy &
+   Security** e clique em **Open Anyway**.
+
+Se o aplicativo continuar bloqueado e tiver sido baixado da página oficial de
+Releases do MCSync, execute:
+
+```bash
+xattr -dr com.apple.quarantine /Applications/MCSync.app
+```
+
+Inicie o MCSync novamente. Esse comando remove somente o atributo de quarentena
+do pacote do MCSync; ele não desativa o Gatekeeper globalmente.
+
 ## Guia rápido
 
 Consulte o [Guia rápido de uso](GUIA-RAPIDO.md) antes do primeiro teste.
