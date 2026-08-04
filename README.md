@@ -3,8 +3,8 @@
 Transfira projetos entre SSDs e Google Drive com análise de espaço, retomada e
 verificação de integridade.
 
-- Site: [sync.mcnexus.app](https://sync.mcnexus.app/)
-- Privacidade: [sync.mcnexus.app/privacy](https://sync.mcnexus.app/privacy/)
+- Site: [mcsync.mcnexus.app](https://mcsync.mcnexus.app/)
+- Privacidade: [mcsync.mcnexus.app/privacy](https://mcsync.mcnexus.app/privacy/)
 
 O MCSync foi criado para tornar cópias grandes mais simples de acompanhar e
 mais fáceis de conferir ao final. Este repositório reúne os instaladores e a

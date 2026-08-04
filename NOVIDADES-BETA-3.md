@@ -55,7 +55,7 @@ concluída, o Google poderá mostrar um aviso de aplicativo não verificado.
 
 Os arquivos são transferidos diretamente entre o Mac e o Google Drive. Tokens
 OAuth ficam armazenados localmente em uma configuração criptografada do
-rclone. Consulte a [Política de Privacidade](https://sync.mcnexus.app/privacy/).
+rclone. Consulte a [Política de Privacidade](https://mcsync.mcnexus.app/privacy/).
 
 ## Limitações conhecidas
 

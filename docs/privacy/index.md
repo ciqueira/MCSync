@@ -4,12 +4,12 @@ title: Privacy Policy
 description: How MCSync accesses, uses, stores, and protects Google user data.
 lang: en
 permalink: /privacy/
-canonical: https://sync.mcnexus.app/privacy/
+canonical: https://mcsync.mcnexus.app/privacy/
 ---
 
 # MCSync - Privacy Policy
 
-[English](https://sync.mcnexus.app/privacy/) · [Português](https://sync.mcnexus.app/pt-BR/privacy/)
+[English](https://mcsync.mcnexus.app/privacy/) · [Português](https://mcsync.mcnexus.app/pt-BR/privacy/)
 
 Last updated: August 1, 2026
 
