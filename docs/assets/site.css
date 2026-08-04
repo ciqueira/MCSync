@@ -84,13 +84,22 @@ a { color: inherit; }
 .brand {
   display: inline-flex;
   align-items: center;
+  gap: 9px;
   text-decoration: none;
 }
 
-.brand-logo {
+.brand-symbol {
   display: block;
-  width: 120px;
-  height: auto;
+  width: 34px;
+  height: 34px;
+}
+
+.brand-name {
+  color: var(--text);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1;
 }
 
 .brand:hover { opacity: 0.82; }
@@ -294,7 +303,6 @@ h3 {
 
 @media (max-width: 760px) {
   .shell { width: min(calc(100% - 28px), var(--shell)); }
-  .brand-logo { width: 108px; }
   nav a:first-child { display: none; }
   nav { gap: 14px; }
   .hero { min-height: auto; padding-block: 100px 80px; }
