@@ -242,6 +242,17 @@ h3 {
 
 .final-section { padding-bottom: 140px; }
 
+.final-copy {
+  max-width: 720px;
+  margin-bottom: 38px;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.final-copy p { margin: 0 0 16px; }
+
+.final-copy p:last-child { margin-bottom: 0; }
+
 .site-footer {
   padding-block: 32px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
